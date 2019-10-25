@@ -106,7 +106,7 @@ CMAKE_DEPENDENT_OPTION(BUILD_C_GLIB "Build C (GLib) library" ON
                        "BUILD_LIBRARIES;WITH_C_GLIB;GLIB_FOUND" OFF)
 
 if(BUILD_CPP)
-    set(boost_components)
+    set(boost_components date_time)
     if(WITH_BOOSTTHREADS OR BUILD_TESTING)
         list(APPEND boost_components system thread)
     endif()
